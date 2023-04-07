@@ -9,4 +9,4 @@ for(let i=0;i<len;i++)
         arr3.push(arr2[i])
     }
 }
-console.log(arr3)
+console.log(arr3) 
