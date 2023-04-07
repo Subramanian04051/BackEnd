@@ -10,6 +10,6 @@ function binaryStringConversion(value,binary)
     else
     {
         binary=binary+(value%2).toString()
-        return binaryStringConversion(parseInt(value/2),binary)
+        return binaryStringConversion(parseInt(value/2),binary) 
     }
 }
