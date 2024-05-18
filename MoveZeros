@@ -1,0 +1,17 @@
+//Moving zeros to right side without using splice and slice function
+let a=[1,2,3,0,5,0,6,0,0,7],b=[],zerocount=0
+for(let i=0;i<a.length;i++)
+{
+    if(a[i]!=0)
+    {
+        b.push(a[i])
+        
+    }
+    else
+    {
+        zerocount++
+        //b.push(0)
+    }
+}
+b=b.concat(new Array(zerocount).fill(0))
+console.log(b)
