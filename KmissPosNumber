@@ -1,0 +1,10 @@
+let k=1,a=[4,7,9,10],missed_no=0,i=0
+while(missed_no<k)
+{
+    if(!a.includes(i))
+    {
+        i++
+        missed_no+=1
+    }
+}
+console.log(i)
