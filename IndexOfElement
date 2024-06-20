@@ -1,0 +1,25 @@
+let a=[3,4,5,1,2,3], max=Math.max(...a),n=a.length-1,key=2,key_index=0
+
+let left=0,right=n
+
+while(left<=right)
+{
+    if(a[left]==key)
+    {
+        key_index=left
+        break
+    }
+    else if(a[right]==key)
+    {
+        key_index=right
+        break
+    }
+    else
+    {
+        left++
+        right--
+    }
+        
+    //}
+}
+console.log(key_index)
