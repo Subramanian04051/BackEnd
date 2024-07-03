@@ -6,7 +6,7 @@ for(let i=0;i<a.length;i++)
     sum_cost_min+=a[i] //getting the minimum cost and add it to existing sum
     for(let j=0;j<k;j++)
     {
-        a=a.slice(0,-1) //Removing last elements for minimum cost ,since the last index level costs will be maximum
+        a.pop() //Removing last elements for minimum cost ,since the last index level costs will be maximum using pop function
         
     }
     //console.log(a)
