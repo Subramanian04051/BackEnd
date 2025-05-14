@@ -1,0 +1,46 @@
+let a=[1,2,3,4,5,6],b=[2,3,4,5,1,6],count1obj={},count2obj={}
+let frstarrlen=a.length,scndarrlen=b.length,minlen=0,maxlen=0
+if(frstarrlen<scndarrlen)
+{
+    minlen=frstarrlen
+    maxlen=scndarrlen
+}
+else
+{
+    minlen=scndarrlen
+    maxlen=frstarrlen
+}
+for(let i=0;i<frstarrlen;i++)
+{
+    if(count1obj[a[i]])
+    {
+        count1obj[a[i]]+=1
+    }
+    else
+    {
+        count1obj[a[i]]=1
+    }
+    
+}
+
+for(let i=0;i<scndarrlen;i++)
+{
+    if(count2obj[b[i]])
+    {
+        count2obj[b[i]]+=1
+    }
+    else
+    {
+        count2obj[b[i]]=1
+    }
+}
+console.log(count1obj)
+console.log(count2obj)
+if(Object.keys(count1obj).length==Object.keys(count2obj).length)
+{
+    console.log('Same Array')
+}
+else
+{
+    console.log('Not same Array')
+}
